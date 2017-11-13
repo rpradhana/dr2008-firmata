@@ -3,13 +3,11 @@ const readline = require('readline');
 
 const
 	COUNTER_TRESHOLD = 54,
-	BASE_DELAY       = 1000,
 	COUNTER_GATE     = 9;
 
 let
 	counter = 0,
-	jellyfish = [],
-	delay = BASE_DELAY;
+	jellyfish = [];
 
 Board.requestPort(function(error, port) {
 	if (error) {
