@@ -1,5 +1,6 @@
 const Board = require('firmata');
 const readline = require('readline');
+const pixel = require('node-pixel');
 
 const
 	COUNTER_TRESHOLD = 54,
@@ -16,6 +17,17 @@ Board.requestPort(function(error, port) {
 	}
 
 	const board = new Board(port.comName);
+
+	// strip = new pixel.Strip({
+	// 	pin: 6,
+	// 	length: 10,
+	// 	firmata: board,
+	// 	controller: "FIRMATA",
+	// });
+
+	// strip.on('ready', function() {
+
+	// });
 
 	board.on('ready', function() {
 		const

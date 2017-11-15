@@ -9,6 +9,7 @@
   "author": "raymond",
   "license": "ISC",
   "dependencies": {
-    "firmata": "^0.17.0"
+    "firmata": "^0.17.0",
+    "node-pixel": "^0.9.3"
   }
 }
